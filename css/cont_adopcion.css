@@ -1,0 +1,46 @@
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+.tarjetas .tarjeta{
+    border: solid thin;
+    margin-right: 1% ;
+    background-color: rgba(255, 255, 255, 0.37);
+    margin-top: 5% !important;
+}
+
+.galeria{
+    margin-top: 10%;
+    margin-left: 1% ;
+    background-color: rgba(255, 255, 255, 0.37);
+    height: 60%;
+
+}
+ 
+img{
+    width: 300px !important;
+    height: 300px !important;
+}
+.btn{
+    margin-bottom: 1%;
+}
+
+.col {
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+
+@media screen and (max-width: 1200px)  
+{
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

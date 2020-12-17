@@ -1,0 +1,33 @@
+img{
+    height: 13vw;
+}
+
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+h4{
+    margin-top: 3%;
+}
+
+h4.card-title {
+    height: 5em;
+}
+
+div.card {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    border-radius: 15px!important;
+}
+
+.tarjetas {
+    height: 25em;
+}
+
+div.container {
+    margin-bottom: 3%;
+}

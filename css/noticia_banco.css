@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+.atras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.container p{
+    padding: 1%;
+}
+img {
+    width:200px;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: left;
+}

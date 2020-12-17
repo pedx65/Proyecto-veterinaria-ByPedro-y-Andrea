@@ -1,0 +1,40 @@
+.precio {
+    display: block;
+    text-align: right;
+    font-size: 1.75em;
+    font-style: italic;
+    margin-right: 3%;
+}
+
+.boton_comprar {
+    width: 25%;
+    height: 2em;
+}
+
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+
+p.card-text {
+    text-align: justify;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 10em;
+}
+
+.card{
+    border-radius: 15px;
+    border-width: 5px;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.imagen_producto {
+    width: 55%;
+    height: auto;
+}

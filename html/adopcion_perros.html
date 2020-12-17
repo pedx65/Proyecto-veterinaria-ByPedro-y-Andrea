@@ -1,0 +1,193 @@
+<html>
+
+<head>
+    <title>Adopcion: Perros</title>
+    <link rel="shortcut icon" href="../img/devicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Enlaces a los css-->
+    <link rel="stylesheet" href="../css/cont_adopcion.css">
+    <link rel="stylesheet" href="../css/generico/cabecera.css">
+    <link rel="stylesheet" href="../css/generico/menu.css">
+    <link rel="stylesheet" href="../css/generico/boton_generico.css">
+
+    <link rel="stylesheet" href="../css/generico/politicas.css">
+    <link rel="stylesheet" href="../css/generico/body_generico.css">
+    <!--Enlace a Java Script-->
+    <script type="text/javascript" src="../js/leermas.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!--Jquery bootstrap-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--DIV Cabecera-->
+    <div id="cabecera">
+        <div id="sesion">
+            <form action="" class="form_cabecera">
+                <p>Usuario:</p>
+                <input type="text" class="area_sesion" placeholder="usuario">
+                <p class="contraseña">Contraseña:</p>
+                <input type="text" class="area_sesion" placeholder="contraseña">
+                <a href="">Inicio de sesion</a>
+            </form>
+        </div>
+        <div id="registro">
+            <a href="registro.html">Registro</a>
+            <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
+        </div>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='../index.html' class="inicio">Inicio</a></li>
+                <li><a class='dropdown-arrow'>Cuidala</a>
+                    <ul class='sub-menus'>
+                        <li><a href='informacion.html'>Informacion</a></li>
+                        <li><a href='adoptala.html'>Adoptala</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Productos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='productos_perro.html'>Perros</a></li>
+                        <li><a href='productos_gato.html'>Gatos</a></li>
+                        <li><a href='productos_otros.html'>Otros</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Contactenos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='redes.html'>Redes Sociales</a></li>
+                        <li><a href='citas.html'>Citas</a></li>
+                    </ul>
+                </li>
+                <li><a href='noticias.html'>Noticias</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="container cuerpo">
+        <div class="galeria">
+            <div class="container-fluid py-2">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a class="h1" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span>&lt;</span>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row align-items-center">
+                                        <div class="col-md py-2">
+                                            <p>
+                                                Flick es una pequeña perrita un poco tímida y reservada. Necesita un
+                                                poco de cariño y un hogar donde se sienta segura para ser feliz, pero
+                                                cuando se suelta es todo alegría. ¿Te apetece conocerla?
+
+                                                Fecha de Nacimiento: 15 Enero de 2014
+
+                                                Sexo: Hembra
+
+                                                Raza: Cruce de Bodeguero
+
+                                                Tamaño: Pequeña
+                                            </p>
+                                            <button class="btn btn-primary">Adoptalo</button>
+                                        </div>
+                                        <div class="col-md py-2">
+                                            <img class="d-block img-fluid" src="../img/adopcion_perros/Flick-6.jpg"
+                                                alt="Flick">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <p>
+                                                Edad: 4 años y medio
+
+                                                Sexo: macho
+
+                                                Tamaño: mediano
+
+                                                Color: marrón con manchitas negras
+
+                                                Completamente sano y esterilizado, desparasitado y con las vacunas al
+                                                día.
+
+                                                Es un perro muy bueno y tranquilo. No necesita unas grandes dosis de
+                                                ejercicio al día pero sí le gusta mucho salir a pasear y lo hace
+                                                estupendamente, sin estrés. Además se lleva bien con otros perros. Era
+                                                un perro miedoso por todo lo que había pasado, pero poco a poco ha ido
+                                                mejorando y en cuanto te conoce y ve que no hay amenaza, es todo amor.
+                                            </p>
+                                            <button class="btn btn-primary">Adoptalo</button>
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block img-fluid" src="../img/adopcion_perros/targareyen-1.jpg"
+                                                alt="Targareyen">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <p>
+
+                                                Este chico tan guapo se llama Meco. Es dócil y cariñoso, y sólo le hace
+                                                falta que le den un poquito de amor para mostrar su maravilloso
+                                                carácter. ¿Te gustaría conocerlo? ¡Él te está esperando!
+
+                                                Fecha de Nacimiento: 20 Abril 2014
+
+                                                Sexo: Macho
+
+                                                Raza: Cruce de Bodeguero
+
+                                                Tamaño: Mediano
+                                            </p>
+                                            <button class="btn btn-primary">Adoptalo</button>
+                                        </div>
+                                        <div class="col">
+                                            <img class="d-block img-fluid" src="../img/adopcion_perros/Meco-05.jpg"
+                                                alt="Meco">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="h1" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span>&gt;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
+        privacidad</a>|
+    <a href="https://www.privacypolicies.com/live/a9f73bb6-325d-45fc-ac81-492d4132dd0c" target="_blank">Politicas de
+        cookies</a> |
+    <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
+        uso</a>
+</footer>
+
+</html>

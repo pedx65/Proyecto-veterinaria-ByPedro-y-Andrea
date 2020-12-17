@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <title>Noticias</title>
+    <link rel="shortcut icon" href="../img/devicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Enlaces css bootstrap-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Enlaces a los css-->
+    <link rel="stylesheet" href="../css/noticia_banco.css">
+    <link rel="stylesheet" href="../css/generico/cabecera.css">
+    <link rel="stylesheet" href="../css/generico/menu.css">
+    <link rel="stylesheet" href="../css/generico/boton_generico.css">
+
+    <link rel="stylesheet" href="../css/generico/politicas.css">
+    <link rel="stylesheet" href="../css/generico/body_generico.css">
+    <!--Enlace a Java Script-->
+    <script type="text/javascript" src="../js/leermas.js"></script>
+    <!--Jquery bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <!--DIV Cabecera-->
+    <div id="cabecera">
+        <div id="sesion">
+            <form action="" class="form_cabecera">
+                <p>Usuario:</p>
+                <input type="text" class="area_sesion" placeholder="usuario">
+                <p class="contraseña">Contraseña:</p>
+                <input type="text" class="area_sesion" placeholder="contraseña">
+                <a href="">Inicio de sesion</a>
+            </form>
+        </div>
+        <div id="registro">
+            <a href="registro.html">Registro</a>
+            <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
+        </div>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='../index.html' class="inicio">Inicio</a></li>
+                <li><a class='dropdown-arrow'>Cuidala</a>
+                    <ul class='sub-menus'>
+                        <li><a href='informacion.html'>Informacion</a></li>
+                        <li><a href='adoptala.html'>Adoptala</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Productos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='productos_perro.html'>Perros</a></li>
+                        <li><a href='productos_gato.html'>Gatos</a></li>
+                        <li><a href='productos_otros.html'>Otros</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Contactenos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='redes.html'>Redes Sociales</a></li>
+                        <li><a href='citas.html'>Citas</a></li>
+                    </ul>
+                </li>
+                <li><a href='noticias.html'>Noticias</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="container">
+        <p>La EFSA ha desarrollado una herramienta para ayudar a las empresas alimentarias a decidir cuándo aplicar la
+            fecha de caducidad o consumo preferente a sus productos.
+
+
+            La fecha de caducidad en los alimentos tiene que ver con la seguridad, “los alimentos se pueden comer hasta
+            esta fecha, pero no después, incluso si se ven y huelen bien”, indica la EFSA. "Consumir preferentemente
+            antes" se refiere a la calidad, “el alimento será seguro para comer después de esta fecha, pero es posible
+            que no esté en su mejor momento. Por ejemplo, su sabor y textura pueden no ser tan buenos”.
+
+
+            La Comisión Europea estima que hasta el 10% de los 88 millones de toneladas de desperdicio de alimentos
+            generados anualmente en la UE está relacionado con el marcado de la fecha en los productos alimenticios.
+
+
+            Kostas Koutsoumanis, presidente del Panel de Peligros Biológicos de la EFSA, explica que “la información
+            clara y correcta sobre los envases y una mejor comprensión y uso del marcado de la fecha en los alimentos
+            por parte de todos los actores pueden ayudar a reducir el desperdicio de alimentos en la UE, al tiempo que
+            se continúa garantizando la seguridad alimentaria. Esta opinión científica representa un paso adelante en
+            esta dirección”.
+
+
+            La herramienta está estructurada como un árbol de decisiones con una serie de preguntas que los operadores
+            de empresas alimentarias deben responder para ayudarles a decidir si se requiere una fecha de "caducidad" o
+            de "consumo preferente antes de". Las preguntas van desde si los requisitos de marcado de la fecha para una
+            categoría de alimentos ya están regulados por la legislación, si un producto se somete a algún tratamiento
+            para eliminar riesgos, si se vuelve a manipular antes del envasado, sus características y condiciones de
+            almacenamiento.
+
+
+            Los expertos también revisaron los factores que deben considerar los operadores de empresas alimentarias
+            para establecer una fecha de vida útil: el período de tiempo durante el cual un alimento seguirá siendo
+            seguro y de una calidad adecuada para el consumo mientras el empaque está intacto y almacenado según las
+            instrucciones.
+
+
+            El Panel de Riesgos Biológicos de la EFSA publicará otra opinión sobre este tema en 2021. Se centrará en la
+            información proporcionada a los consumidores sobre las condiciones de almacenamiento, los plazos de consumo
+            después de las prácticas de apertura y descongelación.
+        </p>
+
+    </div>
+    <div class="atras">
+        <input type="button" class="boton_generico" onclick="location.href='noticias.html';" value="Volver atras" />
+    </div>
+
+
+
+
+
+</body>
+<footer>
+    <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
+        privacidad</a>|
+    <a href="https://www.privacypolicies.com/live/a9f73bb6-325d-45fc-ac81-492d4132dd0c" target="_blank">Politicas de
+        cookies</a> |
+    <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
+        uso</a>
+</footer>
+
+</html>

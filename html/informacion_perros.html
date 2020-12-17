@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Informacion Perros</title>
+    <link rel="shortcut icon" href="../img/devicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Enlaces a los css-->
+    <link rel="stylesheet" href="../css/informacion.css">
+    <link rel="stylesheet" href="../css/generico/cabecera.css">
+    <link rel="stylesheet" href="../css/generico/boton_generico.css">
+    
+    <link rel="stylesheet" href="../css/generico/politicas.css">
+    <link rel="stylesheet" href="../css/generico/menu.css">
+    <link rel="stylesheet" href="../css/generico/body_generico.css">
+    <!--Enlace a Java Script-->
+    <script type="text/javascript" src="../js/leermas.js"></script>
+    <!--Jquery bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--DIV Cabecera-->
+    <div id="cabecera">
+        <div id="sesion">
+            <form action="" class="form_cabecera">
+                <p>Usuario:</p>
+                <input type="text" class="area_sesion" placeholder="usuario">
+                <p class="contraseña">Contraseña:</p>
+                <input type="text" class="area_sesion" placeholder="contraseña">
+                <a href="">Inicio de sesion</a>
+            </form>
+        </div>
+        <div id="registro">
+            <a href="registro.html">Registro</a>
+            <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
+        </div>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='../index.html' class="inicio">Inicio</a></li>
+                <li><a class='dropdown-arrow'>Cuidala</a>
+                    <ul class='sub-menus'>
+                        <li><a href='informacion.html'>Informacion</a></li>
+                        <li><a href='adoptala.html'>Adoptala</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Productos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='productos_perro.html'>Perros</a></li>
+                        <li><a href='productos_gato.html'>Gatos</a></li>
+                        <li><a href='productos_otros.html'>Otros</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Contactenos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='redes.html'>Redes Sociales</a></li>
+                        <li><a href='citas.html'>Citas</a></li>
+                    </ul>
+                </li>
+                <li><a href='noticias.html'>Noticias</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="informacion">
+        <h1>Obtenga alguna información de como cuidar a tu perro</h1>
+        <h4>Esto son algunos consejos utiles, aun así cada animal es un mundo,recuerde cuidarlo como corresponda..
+        </h4>
+        <br>
+        <br>
+    </div>
+
+    <div class="cuerpo">
+
+        <div class="parrafo" id="parrafo1">
+            <h4>1. IDENTIFICA A TU MASCOTA</h4>
+            <p>
+                Puedes identificar a tu mascota de varias formas, las más conocidas y fundamentales son dos:
+                <br>
+                <br> A.- Chapa de identificación. En el collar o el arnés que le pongas a tu perro puedes incluir una chapa metálica con su nombre y tu número de teléfono. Aunque lo hayas educado muy bien y extremes las precauciones, tu perro puede escaparse.
+                Para quedarte más tranquilo, procura que esté identificado con este tipo de chapas, así cualquier persona que lo encuentre puede localizarte fácilmente para devolvértelo.
+                <br>
+                <br> B.- Microchip. Es tan necesario como fundamental. A diferencia de la chapa, no puedes ponérselo tú en casa, debes acudir al veterinario. Aprovechas de esta forma su presentación en la consulta y unos consejos prácticos para cuidar
+                a tu perro.
+            </p>
+            <input class="boton_generico" type="button" value="Leer Todo" id="btn_haga" style="height: 30px;" onclick="mostrar(event);">
+        </div>
+
+    </div>
+    <div class="cuerpo" style="display: none;" id="oculto">
+        <!--segundo-->
+
+        <div class="parrafo parrafo2" >
+            <h4>2. NO DEJES OBJETOS PELIGROSOS A SU ALCANCE</h4>
+            <p>
+                Podríamos decir que una mascota es como un niño pequeño. Tiene la necesidad de explorarlo todo y llevárselo a la boca. Para evitar accidentes en casa, cuida de tu perro y no dejes a su alcance nada que pueda causarle daño. Elimina objetos punzantes o
+                cortantes, plantas tóxicas, objetos delicados que puedan romperse fácilmente como porcelana o vidrio…</p>
+
+            <h4> 3. OFRÉCELE UNA ALIMENTACIÓN DE CALIDAD</h4>
+            <p>
+                Es fundamental para tu perro estar bien alimentado. La norma número uno para cuidar perros en casa es ofrecerle una dieta variada y saludable. puedes optar por dietas secas o húmedas, incluso por una alimentación natural y cocinar tus propias recetas.
+                Lo importante es elegir un alimento de gama alta, completo, cuyos ingredientes sean de calidad. Solo así procurarás que tu perro crezca sano y feliz.</p>
+            <br><br>
+            <h4>4. LÁVALO Y CEPÍLLALO CON ASIDUIDAD</h4>
+            <p> La higiene es otro aspecto que no debes descuidar. Cepilla a tu perro diariamente, o varias veces al día si tiene mucho pelo. Con este gesto, además de eliminar pelo y piel muerta, estrechas lazos con tu perro y afianzas vuestro vínculo. Aprovecha
+                y cuida a tu perro al máximo: háblale con cariño, acarícialo, que sienta todo tu amor y respeto.</p>
+
+            <br><br>
+            <h4> 5. LLÉVALO AL VETERINARIO DE FORMA PERIÓDICA</h4>
+            <p> Las visitas al veterinario solo deberían ser de rutina. Nadie quiere ir corriendo al veterinario por una emergencia. Aunque lo accidentes ocurren, evita enfermedades o infestaciones de parásitos en tu perro con unos buenos hábitos de higiene,
+                una alimentación adecuada y visitas periódicas al veterinario
+            </p>
+
+            <br><br>
+            <h4>6. NO LO DEJES SOLO</h4>
+            <p>
+                Nunca dejes solo a tu perro, en ningún lugar, mucho menos en un coche durante las horas centrales del día. Si no te queda más remedio y debes dejarlo solo en casa, procura que no sea demasiado tiempo. Existen, si no puedes dejarlo en compañía de otra
+                persona, piensa en las opciones que tienes. ¡Siempre hay una alternativa!
+            </p>
+
+            <br><br>
+            <h4> 7. PREMIA SU BUEN COMPORTAMIENTO Y ACARÍCIALO</h4>
+            <p>Si tu perro hace cosas bien y tiene un buen comportamiento, prémialo. No solo puedes hacerlo con chucherías para perros. Puedes premiar su buena conducta con caricias, alentándolo con frases motivadoras y recordándole siempre que puedas cuánto
+                lo quieres.</p>
+
+            <br><br>
+            <h4>8. EDUCA A TU PERRO Y TEN PACIENCIA CON ÉL</h4>
+            <p>
+                Una de las mejores cosas que puedes hacer por tu perro es educarlo. Enséñale a hacer sus necesidades en los lugares adecuados, a socializar con otras personas y animales. Es muy importante hacerlo mientras es un cachorro, y que sea un aprendizaje para
+                toda la vida. Si está educado, será más fácil pasear con él, llevarlo al parque, al veterinario o incluso en un medio de transporte.
+            </p>
+            <img src="../img/Informacion_perros/img1.webp">
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer>
+    <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
+    privacidad</a>|
+    <a href="https://www.privacypolicies.com/live/a9f73bb6-325d-45fc-ac81-492d4132dd0c" target="_blank">Politicas de
+    cookies</a> |
+    <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
+    uso</a>
+</footer>
+
+</html>

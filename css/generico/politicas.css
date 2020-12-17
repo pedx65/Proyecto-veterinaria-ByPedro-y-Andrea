@@ -1,0 +1,39 @@
+/****************Políticas y privacidad**************/
+footer {  
+   
+    text-align: center;
+    height: 3%;
+    background-color: rgba(255, 255, 255, 0.5); 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(9, 5, 255);
+    
+}
+/************************+RESPONSIVE+**********************************************/
+@media screen and (max-width: 1200px) {
+    footer {  
+        height: 3%;
+        font-size: 80%;
+    }
+    
+
+}
+@media screen and (max-width: 800px) {
+    footer {  
+        height: 3%;
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    footer {  
+        height: 3%;
+        font-size: 80%;
+    }
+}

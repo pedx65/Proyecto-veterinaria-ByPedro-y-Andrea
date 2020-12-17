@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>Informacion Gatos</title>
+    <link rel="shortcut icon" href="../img/devicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Enlaces a los css-->
+    <link rel="stylesheet" href="../css/informacion.css">
+    <link rel="stylesheet" href="../css/generico/cabecera.css">
+    <link rel="stylesheet" href="../css/generico/menu.css">
+    <link rel="stylesheet" href="../css/generico/boton_generico.css">
+    
+    <link rel="stylesheet" href="../css/generico/politicas.css">
+    <link rel="stylesheet" href="../css/generico/body_generico.css">
+    <!--Enlace a Java Script-->
+    <script type="text/javascript" src="../js/leermas.js"></script>
+    <!--Jquery bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--DIV Cabecera-->
+    <div id="cabecera">
+        <div id="sesion">
+            <form action="" class="form_cabecera">
+                <p>Usuario:</p>
+                <input type="text" class="area_sesion" placeholder="usuario">
+                <p class="contraseña">Contraseña:</p>
+                <input type="text" class="area_sesion" placeholder="contraseña">
+                <a href="">Inicio de sesion</a>
+            </form>
+        </div>
+        <div id="registro">
+            <a href="registro.html">Registro</a>
+            <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
+        </div>
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a href='../index.html' class="inicio">Inicio</a></li>
+                <li><a class='dropdown-arrow'>Cuidala</a>
+                    <ul class='sub-menus'>
+                        <li><a href='informacion.html'>Informacion</a></li>
+                        <li><a href='adoptala.html'>Adoptala</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Productos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='productos_perro.html'>Perros</a></li>
+                        <li><a href='productos_gato.html'>Gatos</a></li>
+                        <li><a href='productos_otros.html'>Otros</a></li>
+                    </ul>
+                </li>
+                <li><a class='dropdown-arrow'>Contactenos</a>
+                    <ul class='sub-menus'>
+                        <li><a href='redes.html'>Redes Sociales</a></li>
+                        <li><a href='citas.html'>Citas</a></li>
+                    </ul>
+                </li>
+                <li><a href='noticias.html'>Noticias</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="informacion">
+        <h1>Obtenga alguna información de como cuidar a tu gato</h1>
+        <h4>Esto son algunos consejos utiles, aun así cada animal es un mundo,recuerde cuidarlo como corresponda..
+        </h4>
+        <br>
+        <br>
+    </div>
+
+    <div class="cuerpo">
+
+        <div class="parrafo">
+            <h4>1. LA ALIMENTACIÓN:</h4>
+            <p>Es necesario que desde gatitos acostumbremos a estos peludos a cambiar de sabores y texturas para que sea sencillo poder variar su dieta cuando sea necesario. Además es importante que ésta contenga un alto porcentaje de proteínas, ya que ellos
+                en libertad comerían pequeños mamíferos y aves.
+            </p>
+            <h4>2. EL AGUA:</h4>
+            <p>
+                Los gatos no son grandes bebedores. Esto puede conllevar a problemas en las vías urinarias. Es por ello que debemos fomentar su ingesta de agua. Podemos conseguirlo colocando fuentes de agua para captar su atención. Varios puntos de agua limpia y fresca
+                en la vivienda.
+            </p>
+            <input class="boton_generico" type="button" value="Leer Todo" id="btn_haga" style="height: 30px;" onclick="mostrar(event);">
+        </div>
+
+    </div>
+    <div class="cuerpo" style="display: none;" id="oculto">
+        <!--segundo-->
+
+        <div class="parrafo parrafo2">
+            <h4>3. EL ARENERO:</h4>
+            <p>
+                Los gatos son muy limpios. Por esto el arenero debe ser grande, descubierto y limpiarse a diario. La arena debe ser confortable y el número de areneros 1 o 2 por cada gato. Orinar fuera de la bandeja puede indicar que algo en el arenero o en nuestro felino
+                no va bien. Muchas veces es estrés, recuerda: ¡los gatos no son vengativos!
+            </p>
+
+            <br><br>
+            <h4>4. LA MALTA:</h4>
+            <p>
+                Los gatos son animales que se acicalan a diario. Si dejan de hacerlo debemos sospechar que algo no va bien en nuestra mascota. Puede tratarse de algún dolor en la boca o de alguna patología sistémica. Los gatos de pelo largo en las épocas de muda quizá
+                necesiten administraciones de malta. Pero no hay que confundir intentar expulsar bolas de pelo con el asma felino, una patología muy frecuente en ellos</p>
+            <br><br>
+            <h4>5. EL JUEGO:</h4>
+            <p>Los gatos desde pequeños son animales curiosos, intrépidos y grandes cazadores. Con su domesticación es una práctica que no muchos realizan a diario, sobre todo los gatos indoor. No te olvides de estimular a tu mascota. Podemos utilizar un
+                láser o fabricar juguetes caseros. ¡Nunca tus manos! Utiliza tu imaginación, pero siempre debemos conducir el juego a un premio. Algo que simule lo que él cazaría en el exterior, es suficiente con un poco de comida.</p>
+
+            <br><br>
+            <h4> 6. LA CURIOSIDAD MATÓ AL GATO:</h4>
+            <p>Los gatos indoor se aburren en el sofá y les llama la atención lo que ocurre en el exterior. Por ello muchos deciden asomarse y saltar al vacío. Esto es lo que los veterinarios llamamos “gato paracaidista”. Una urgencia que la mayoría de veces
+                acaba en desgracia, así que, ¡cuidado con las ventanas!
+            </p>
+
+            <br><br>
+            <h4>6. NO LO DEJES SOLO</h4>
+            <p>
+                Nunca dejes solo a tu perro, en ningún lugar, mucho menos en un coche durante las horas centrales del día. Si no te queda más remedio y debes dejarlo solo en casa, procura que no sea demasiado tiempo. Existen, si no puedes dejarlo en compañía de otra
+                persona, piensa en las opciones que tienes. ¡Siempre hay una alternativa!
+            </p>
+
+            <br><br>
+            <h4>7. ENRIQUECIMIENTO AMBIENTAL:</h4>
+            <p>Mientras tú has estado todo el día fuera de casa trabajando, tu gato ha pasado la mayor parte del tiempo descansando. Esto hace que muchos de ellos se activen durante la noche y te molesten al dormir. Para evitar esto debes facilitarle juguetes
+                que estimulen su inteligencia. Puedes proporcionarle estanterías a diversas alturas y esconder algunos premios antes de irte de casa ¡que se divierta!</p>
+
+            <br><br>
+            <h4>8. EL RASCADOR:</h4>
+            <p>
+                No te enfades si ves que tu gato se afila las uñas en el sofá. Piensa que ellos en libertad lo harían en un tronco de árbol, sólido y fuerte. La mayoría de los rascadores son bonitos pero inestables y eso a ellos les asusta.
+            </p>
+            <br><br>
+            <h4>9. ¿GATO O PLANTAS?:</h4>
+            <p>
+                Los gatos en el exterior ingieren diariamente hierba que facilitan su tránsito. En casa sustituye esta hierba por plantas, y muchas de ellas son tóxicas para ellos. Debemos proporcionar a nuestro gato hierba gatera y colocarla lejos del resto de plantas.
+            </p>
+            <img src="../img/Informacion_gatos/img1.webp">
+        </div>
+
+    </div>
+
+
+
+</body>
+<footer>
+    <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
+    privacidad</a>|
+    <a href="https://www.privacypolicies.com/live/a9f73bb6-325d-45fc-ac81-492d4132dd0c" target="_blank">Politicas de
+    cookies</a> |
+    <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
+    uso</a>
+</footer>
+
+</html>
