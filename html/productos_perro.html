@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--Enlaces a los css-->
-    <link rel="stylesheet" href="../css/redes_sociales.css">
+
     <link rel="stylesheet" href="../css/generico/cabecera.css">
     <link rel="stylesheet" href="../css/generico/boton_generico.css">
     <link rel="stylesheet" href="../css/productos.css">
@@ -16,8 +16,16 @@
     <link rel="stylesheet" href="../css/generico/body_generico.css">
     <!--Enlace a Java Script-->
     <script type="text/javascript" src="../js/index.js"></script>
-    <!--Jquery bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
+    <!--Jquery bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -64,6 +72,43 @@
         </nav>
 
     </div>
+    <div id="carousel1" class="carousel slide" data-ride="carousel" data-target="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <!-- diapositivas -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../img/productos_perro/pelota.jpg" alt="Esta imagen no esta disponible">
+                <div class="carousel-caption">
+                    <h4>Ciento de productos para perros a su disposición</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img class="d-block w-100" src="../img/productos_perro/perro_final.jpg" alt="Esta imagen no esta disponible"><a />
+                    <div class="carousel-caption">
+                        <h4 style="color: black;">Mejores precios imposibles!!!</h4>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <a><img class="d-block w-100" src="../img/productos_perro/perro_con_panal.jpg" alt="Esta imagen no esta disponible"></a>
+                <div class="carousel-caption">
+                    <h4>Envio del producto en menos de 24 horas</h4>
+                </div>
+            </div>
+        </div>
+        <!-- botones de desplazamiento a izquierda y derecha -->
+        <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <div class="container">
         <div class="card-group mt-3">
@@ -72,10 +117,7 @@
                 <div class="card-body">
                     <img src="../img/productos_perro/compyperrosnackbarritas_0.png" class="imagen_producto">
                     <h4 class="card-title">Barritas para cachorros</h4>
-                    <p class="card-text"><span class="precio">4,99€</span>Carnes y subproductos animales (mín. 14% de
-                        pollo, mín. 12% de vacuno),
-                        cereales, subproductos de origen vegetal (0,4% inulina), azúcares, sustancias minerales, aceites
-                        y grasas. </p>
+                    <p class="card-text"><span class="precio">4,99€</span>Carnes y subproductos animales (mín. 14% de pollo, mín. 12% de vacuno), cereales, subproductos de origen vegetal (0,4% inulina), azúcares, sustancias minerales, aceites y grasas. </p>
                     <button class="boton_generico boton_comprar">Comprar</button>
                 </div>
             </div>
@@ -84,10 +126,7 @@
                 <div class="card-body">
                     <img src="../img/productos_perro/Alimento-para-Perros-Dogui-Carne-Asada-15-Kg.png" class="imagen_producto">
                     <h4 class="card-title">Pienso para perros Purina</h4>
-                    <p class="card-text"><span class="precio">29,97€</span>Contenido en proteínas moderado para ayudar a
-                        reducir la disponibilidad de
-                        sustratos para las bacterias productoras de ureasa.
-                        Altamente palatable para una administración a largo plazo </p>
+                    <p class="card-text"><span class="precio">29,97€</span>Contenido en proteínas moderado para ayudar a reducir la disponibilidad de sustratos para las bacterias productoras de ureasa. Altamente palatable para una administración a largo plazo </p>
                     <button class="boton_generico boton_comprar">Comprar</button>
                 </div>
             </div>
@@ -96,15 +135,14 @@
                 <div class="card-body">
                     <img src="../img/productos_perro/seresto_plus_2-removebg-preview.png" class="imagen_producto">
                     <h4 class="card-title">Collarín antipulgas</h4>
-                    <p class="card-text"><span class="precio">16,99€</span>Ofrece a tu perro hasta 8 meses de protección
-                        contra pulgas y garrapatas,
-                        reduciendo también el riesgo de infección de leishmaniosis canina</p>
+                    <p class="card-text"><span class="precio">16,99€</span>Ofrece a tu perro hasta 8 meses de protección contra pulgas y garrapatas, reduciendo también el riesgo de infección de leishmaniosis canina</p>
                     <button class="boton_generico boton_comprar">Comprar</button>
                 </div>
             </div>
 
         </div>
     </div>
+    <br><br>
 </body>
 <footer>
     <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
