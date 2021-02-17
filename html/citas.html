@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../css/generico/body_generico.css">
     <!--Enlace a Java Script-->
     <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/cita.js"></script>
     <!--Jquery bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -102,8 +103,9 @@
                 <input type="radio" name="hora_cita" id="cita_tarde" value="tarde">Tarde
             </div>
 
-            <input type="submit" name="enviar" class="boton_generico boton_pedir_cita" value="Pedir la cita">
-        </form> <!-- cierre form -->
+            <input type="submit" name="enviar" class="boton_generico boton_pedir_cita" value="Pedir la cita" onclick="pedir()">
+        </form>
+        <!-- cierre form -->
     </div>
 </body>
 

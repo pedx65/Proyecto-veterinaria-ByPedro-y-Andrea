@@ -16,14 +16,11 @@
 
     <!--Enlace a Java Script-->
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 
     <!--Jquery bootstrap-->
@@ -32,9 +29,11 @@
 
 </head>
 
-<body>
+<body id="ancla1">
     <!--DIV Cabecera-->
+
     <div id="cabecera">
+
         <div id="sesion">
             <form action="" class="form_cabecera">
                 <p>Usuario:</p>
@@ -44,11 +43,13 @@
                 <a href="">Inicio de sesion</a>
             </form>
         </div>
+
         <div id="registro">
             <a href="registro.html">Registro</a>
             <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
         </div>
         <nav id='menu'>
+
             <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
             <ul>
                 <li><a href='index.html' class="inicio">Inicio</a></li>
@@ -72,6 +73,7 @@
                     </ul>
                 </li>
                 <li><a href='noticias.html'>Noticias</a></li>
+                <li><a href='Ejercicios ejemplo Fernando/ejemplos.html'>Ejemplos fernando</a></li>
             </ul>
         </nav>
 
@@ -79,6 +81,17 @@
 
     <div>
         <h1 id="nombre">#PetsAndLive</h1>
+        <div class="reproductor" id="reproductor">
+            <audio id="player">
+                <source src="sonidos/ballena.mp3" type="audio/mp3"  />
+                <source src="Aretha.ogg" type="audio/ogg" />
+            </audio>
+            <img src="https://yt3.ggpht.com/ytc/AAUvwnjY_qjGDVrTRBgJ_p1ziu7UGv-UGgEZP1Y877z-ew=s900-c-k-c0x00ffffff-no-rj" onclick="document.getElementById('player').play() "></img>
+            <img src="https://cdn0.iconfinder.com/data/icons/music-sets/500/218-512.png" onclick="document.getElementById('player').pause() "></img>
+            <img src="data:image/png;base64,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"
+                onclick="document.getElementById('player').volume-=0.1"> </img>
+            <img src="https://previews.123rf.com/images/dxinerz/dxinerz1509/dxinerz150901235/45592970-volumen-sonido-imagen-del-vector-del-icono-de-audio-tambi%C3%A9n-se-puede-utilizar-para-aplicaciones-multim.jpg" onclick="document.getElementById('player').volume+=0.1"></img>
+        </div>
     </div>
     <!--slider con imagenes, intervalo de tiempo etc-->
     <div id="carousel1" class="carousel slide" data-ride="carousel" data-target="2000">
@@ -97,10 +110,10 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="informacion.html"><img class="d-block w-100" src="img/portada2.jpg" alt=""><a/>
-                <div class="carousel-caption">
-                    <h4 style="color: black;">Obtenga información sobre como cuidar su mascota</h4>
-                </div>
+                <a href="informacion.html"><img class="d-block w-100" src="img/portada2.jpg" alt=""><a />
+                    <div class="carousel-caption">
+                        <h4 style="color: black;">Obtenga información sobre como cuidar su mascota</h4>
+                    </div>
             </div>
             <div class="carousel-item">
                 <a href="adoptala.html"><img class="d-block w-100" src="img/portada3.jpg" alt=""></a>
@@ -130,23 +143,20 @@
 
     <div id="cuerpo">
         <div id="saber">
-            <p id="mostrar" style="display: block;">Somos una empresa especializada en la ayuda a animales domésticos,
-                nuestra principal...</p>
+            <p id="mostrar" style="display: block;">Somos una empresa especializada en la ayuda a animales domésticos, nuestra principal...</p>
             <div class="overflow">
-                <p id="oculto" style="display: none;">Somos una empresa especializada en la ayuda a animales domésticos,
-                    nuestra principal prioridad es el cuidado de nuestros amigos más preciados. Ofertamos una variedad
-                    de productos tanto de higiene como consejos sobre como cuidar a nuestras
-                    mascotas, así como profesionales titulados en el tema.Cuidar a tu mascota es tan importante como
-                    cuidarse a uno mismo</p>
+                <p id="oculto" style="display: none;">Somos una empresa especializada en la ayuda a animales domésticos, nuestra principal prioridad es el cuidado de nuestros amigos más preciados. Ofertamos una variedad de productos tanto de higiene como consejos sobre como cuidar a nuestras
+                    mascotas, así como profesionales titulados en el tema.Cuidar a tu mascota es tan importante como cuidarse a uno mismo</p>
             </div>
 
-            <input class="boton_generico" type="button" value="Haga click para saber mas" onclick="ocultar()"
-                id="btn_haga">
-            <input class="boton_generico" type="button" value="Volver" onclick="mostrar()" style="display: none;"
-                id="btn_atras">
+            <input class="boton_generico" type="button" value="Haga click para saber mas" onclick="ocultar()" id="btn_haga">
+            <input class="boton_generico" type="button" value="Volver" onclick="mostrar()" style="display: none;" id="btn_atras">
+
 
         </div>
+
     </div>
+
     <div id="cuerpo2">
 
         <div id="ubicacion">
@@ -165,15 +175,23 @@
         <div class="mapouter">
             <div class="gmap_canvas">
 
-                <iframe id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=calle%20miguel%20flores%20caraballo&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                    frameborder="0" scrolling="no"></iframe>
+                <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=calle%20miguel%20flores%20caraballo&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"></iframe>
             </div>
 
         </div>
 
     </div>
 
+    <a href="#ancla1">
+        <svg height="210" width="400" stroke="#19F010" fill="#236B8F">
+        
+        <path d="M150 0 L75 200 L225 200 Z" />
+        
+        Sorry, your browser does not support inline SVG.
+    </svg>
+    </a>
+    <video src="video/wake-up-wallpaper.mp4" autoplay loop muted poster="img/fondoindex.webp"></video>
+    <br><br><br><br>
 </body>
 <footer>
     <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
@@ -182,6 +200,8 @@
         cookies</a> |
     <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
         uso</a>
+
 </footer>
+
 
 </html>

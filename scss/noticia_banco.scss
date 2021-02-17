@@ -1,0 +1,42 @@
+
+@mixin  contenedor (){
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    
+}
+@mixin volver_atras (){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    
+}
+body {
+    
+    .container {
+       @include contenedor();
+    }
+    .atras{
+      @include volver_atras();
+    }
+    .container p{
+        padding: 1%;
+    }
+    img {
+        width:200px;
+    }
+    
+    .img1 {
+        float: right;
+    }
+    
+    .img2 {
+        float: left;
+    }
+}
+
+

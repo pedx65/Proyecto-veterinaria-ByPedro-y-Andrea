@@ -8,7 +8,8 @@
     background: #ffffff8c;
 }
 
-#menu ul, #menu li {
+#menu ul,
+#menu li {
     /*ul y li dentro de menu*/
     margin: 0 auto;
     padding: 0;
@@ -46,10 +47,7 @@
 #menu li a {
     /*dentro de a*/
     border-left: solid thin;
- 
-
     transition: color 0.8s linear 0.2s;
-    
 }
 
 #menu li .inicio {
@@ -62,9 +60,6 @@
     color: #ffffff;
     background: #49c7e0c9;
     transition: background 0.8s linear 0.2s;
-    
-    
-   
 }
 
 #menu input {
@@ -128,9 +123,10 @@
     color: #000000;
 }
 
+
 /*********************************RESPONSIVE MEDIA ***********************************/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #menu {
         position: relative;
         margin-left: 0%;
@@ -158,7 +154,8 @@
         float: none;
         width: auto;
     }
-    #menu input, #menu label {
+    #menu input,
+    #menu label {
         position: absolute;
         top: 0;
         left: 0;
@@ -181,30 +178,29 @@
     }
 }
 
-@media screen and (max-width: 800px) and (max-width: 1199px){
+@media screen and (max-width: 800px) and (max-width: 1199px) {
     #menu {
         position: absolute;
         top: 20px;
-       float: left;
+        float: left;
         background-color: rgba(255, 255, 255, 0);
     }
 }
 
-@media screen and (max-width:1200px) and (max-width:2000px){
+@media screen and (max-width:1200px) and (max-width:2000px) {
     #menu {
         position: absolute;
         top: 30px;
-       float: left;
+        float: left;
         background-color: rgba(255, 255, 255, 0);
     }
 }
 
-@media screen and (max-width: 600px) and (max-width: 799px){
+@media screen and (max-width: 600px) and (max-width: 799px) {
     #menu {
         position: absolute;
         top: 20px;
-       float: left;
-  
+        float: left;
         background-color: rgba(255, 255, 255, 0);
     }
 }

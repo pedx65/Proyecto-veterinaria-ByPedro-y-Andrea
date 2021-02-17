@@ -1,61 +1,72 @@
-
-.informacion{ text-align: center;}
-.cuerpo{
-    display: flex;
-    flex-direction:row;
-    width: 100%;
- 
-   
+.informacion {
+    text-align: center;
 }
-h1{margin-top: 6%;}
-img{
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+body {
+    background-image: url("../img/fondoindex.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #8EB8F1;
+}
+
+h1 {
+    margin-top: 6%;
+}
+
+img {
     height: 150px;
-    margin-left:35%;
+    margin-left: 35%;
     margin-top: 5%;
 }
-.cont_img{
+
+.cont_img {
     margin-right: 10%;
     margin-top: 3%;
 }
-.parrafo{
+
+.parrafo {
     background-color: rgba(253, 253, 253, 0.5);
     padding: 1%;
 }
-.parrafo h4,.parrafo p{
+
+.parrafo h4,
+.parrafo p {
     margin-left: 7%;
     margin-right: 7%;
-  
 }
-.boton_generico{
+
+.boton_generico {
     margin-left: 45%;
-    width: 100px; 
+    width: 100px;
 }
+
 @media screen and (max-width: 1200px) {
-    .cuerpo{
+    .cuerpo {
         height: 90%;
         width: 100%;
         margin-bottom: 10%;
-       
     }
-    .parrafo2{
+    .parrafo2 {
         margin-top: -10%;
         margin-bottom: 5%;
     }
-    img{
+    img {
         margin-left: 30%;
     }
-    .boton_generico{
+    .boton_generico {
         margin-left: 40%;
-        width: 100px; 
+        width: 100px;
     }
-    
- 
 }
-@media screen and (max-width: 600px) {
-   
-  
-}
-@media screen and (max-width: 800px) {
-   
 
-}
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 800px) {}
