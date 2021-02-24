@@ -1,33 +1,51 @@
-img{
-    height: 13vw;
+img {
+  height: 13vw;
 }
 
-body {
-    background-image: url("../img/fondoindex.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #8EB8F1;
-}
-
-h4{
-    margin-top: 3%;
+h4 {
+  margin-top: 3%;
 }
 
 h4.card-title {
-    height: 5em;
+  height: 5em;
 }
 
 div.card {
-    background-color: rgba(255, 255, 255, 0.5)!important;
-    border-radius: 15px!important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 15px !important;
 }
 
-.tarjetas {
-    height: 25em;
+.grupo_tarjetas {
+  height: 25em;
 }
 
 div.container {
-    margin-bottom: 3%;
+  margin-bottom: 3%;
 }
+
+@media screen and (max-width: 800px) and (max-width: 799px) {
+  div.card-columns {
+    display: initial !important;
+  }
+  img {
+    width: 50% !important;
+    height: auto !important;
+  }
+  h4.card-title {
+    height: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-width: 799px) {
+  div.card-columns {
+    display: initial !important;
+  }
+  img {
+    width: 50% !important;
+    height: auto !important;
+  }
+  h4.card-title {
+    height: 4em !important;
+  }
+}
+/*# sourceMappingURL=noticias.css.map */

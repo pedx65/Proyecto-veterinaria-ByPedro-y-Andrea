@@ -74,6 +74,7 @@
         height: 17%;
     }
 }
+
 @media screen and (max-width: 800px) {
     #sesion {
         margin-left: 52%;
@@ -101,4 +102,4 @@
     #cabecera {
         height: 17%;
     }
-}
+} 

@@ -30,7 +30,7 @@
 #menu a {
     /*todos los enlaces dentro de menu*/
     display: block;
-    line-height: 35px;
+    line-height: 35px;  
     padding: 0 14px;
     text-decoration: none;
     color: rgb(5, 5, 5);
@@ -114,7 +114,7 @@
 
 #menu li:hover ul.sub-menus {
     /*al mantener el raton encima de un li, se despliega submenu*/
-    display: block
+    display: block;
 }
 
 #menu ul.sub-menus a:hover {
@@ -178,7 +178,7 @@
     }
 }
 
-@media screen and (max-width: 800px) and (max-width: 1199px) {
+@media screen and (min-width: 800px) and (max-width: 1199px) {
     #menu {
         position: absolute;
         top: 20px;

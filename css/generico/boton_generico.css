@@ -13,13 +13,13 @@
 }
 .boton_generico:hover{
 
-    animation-name: example;
+    animation-name: boton;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     color: white;
 }
-@keyframes example {
+@keyframes boton {
     from {box-shadow: 0 0 15px rgb(255, 255, 255);
     background-color: rgba(12, 147, 224, 0.5);}
     to {box-shadow: 0 0 55px rgb(0, 0, 0);

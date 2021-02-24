@@ -1,28 +1,31 @@
 <html>
 
 <head>
-    <title>Noticias</title>
+    <title>Productos de Perro</title>
     <link rel="shortcut icon" href="../img/devicon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Enlaces css bootstrap-->
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--Enlaces a los css-->
-    <link rel="stylesheet" href="../css/noticias.css">
+
     <link rel="stylesheet" href="../css/generico/cabecera.css">
-    <link rel="stylesheet" href="../css/generico/menu.css">
     <link rel="stylesheet" href="../css/generico/boton_generico.css">
-    <link rel="stylesheet" href="../css/generico/body_generico.css">
+    <link rel="stylesheet" href="../css/productos.css">
     <link rel="stylesheet" href="../css/generico/politicas.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/generico/menu.css">
+    <link rel="stylesheet" href="../css/generico/body_generico.css">
     <!--Enlace a Java Script-->
-    <script type="text/javascript" src="../js/leermas.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
     <!--Jquery bootstrap-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
@@ -52,6 +55,7 @@
                     </ul>
                 </li>
                 <li><a href="productos.html">Productos</a></li>
+
                 <li><a class='dropdown-arrow'>Contactenos</a>
                     <ul class='sub-menus'>
 
@@ -63,65 +67,147 @@
         </nav>
 
     </div>
+    <br>
+    <div class="buscador">
+        <input type="search" placeholder="Buscar">
+    </div>
+    <br>
+    <div id="carousel1" class="carousel slide" data-ride="carousel" data-target="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel1" data-slide-to="1"></li>
+            <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <!-- diapositivas -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="../img/productos_perro/pelota.jpg" alt="Esta imagen no esta disponible">
+                <div class="carousel-caption">
+                    <h4>Ciento de productos para perros a su disposición</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a><img class="d-block w-100" src="../img/productos_perro/perro_final.jpg" alt="Esta imagen no esta disponible"><a />
+                    <div class="carousel-caption">
+                        <h4 style="color: black;">Mejores precios imposibles!!!</h4>
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <a><img class="d-block w-100" src="../img/productos_perro/perro_con_panal.jpg" alt="Esta imagen no esta disponible"></a>
+                <div class="carousel-caption">
+                    <h4>Envio del producto en menos de 24 horas</h4>
+                </div>
+            </div>
+        </div>
+        <!-- botones de desplazamiento a izquierda y derecha -->
+        <a class="carousel-control-prev" href="#carousel1" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <div class="container">
-        <div class="card-columns  mt-4">
+        <div class="card-group mt-3">
 
-            <div class="card text-center border-info ">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Gato cazando" src="../img/noticias/noticia4.webp ">
-                    <h4 class="card-title">El Banco de Sangre Animal realiza cada año cerca de 5.000 transfusiones en España
-                    </h4>
-                    <a href="noticia_banco.html" class="btn btn-primary">Entrar</a>
-                </div>
-            </div>
-            <div class="card text-center border-info ">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Delfin" src="../img/noticias/noticia3.webp ">
-                    <h4 class="card-title">La palatabilidad, su importancia para cumplir con tratamientos antiparasitarios orales</h4>
-                    <a href="noticia3.html" class="btn btn-primary">Entrar</a>
-                </div>
-            </div>
-            <div class="card text-center border-info ">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Zorro precioso" src="../img/noticias/noticia2.webp ">
-                    <h4 class="card-title">¿Cuándo aplicar la fecha de caducidad o consumo preferente a los productos?
-                    </h4>
-                    <a href="noticia2.html" class="btn btn-primary">Entrar</a>
-                </div>
-            </div>
-            <div class="card text-center border-info ">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Buho" src="../img/noticias/noticia1.webp ">
-                    <h4 class="card-title">Revelan pistas sobre cómo los virus de la gripe aviar evaden a las vacunas
-                    </h4>
-                    <a href="#" class="btn btn-primary">Entrar</a>
-                </div>
-            </div>
             <div class="card text-center border-info">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Cachorro de león" src="../img/noticias/noticia5.webp ">
-                    <h4 class="card-title">Identifican una proteína como potencial diana terapéutica para vacunas contra la leishmaniosis</h4>
-
-                    <a href="noticia5.html" class="btn btn-primary">Entrar</a>
+                <div class="card-body">
+                    <img src="../img/productos_perro/compyperrosnackbarritas_0.png" class="imagen_producto">
+                    <h4 class="card-title">Barritas para cachorros</h4>
+                    <p class="card-text"><span class="precio">4,99€</span>Carnes y subproductos animales (mín. 14% de pollo, mín. 12% de vacuno), cereales, subproductos de origen vegetal (0,4% inulina), azúcares, sustancias minerales, aceites y grasas. </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
                 </div>
             </div>
 
             <div class="card text-center border-info">
-                <div class="card-body grupo_tarjetas">
-                    <img alt="Pez tropical" src="../img/noticias/noticia6.jpg ">
-                    <h4 class="card-title">Reacciones tras reconocer la exclusividad en fisioterapia equina al veterinario</h4>
+                <div class="card-body">
+                    <img src="../img/productos_perro/Alimento-para-Perros-Dogui-Carne-Asada-15-Kg.png" class="imagen_producto">
+                    <h4 class="card-title">Pienso para perros Purina</h4>
+                    <p class="card-text"><span class="precio">29,97€</span>Contenido en proteínas moderado para ayudar a reducir la disponibilidad de sustratos para las bacterias productoras de ureasa. Altamente palatable para una administración a largo plazo </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
 
-                    <a href="noticia6.html" class="btn btn-primary">Entrar</a>
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_perro/seresto_plus_2-removebg-preview.png" class="imagen_producto">
+                    <h4 class="card-title">Collarín antipulgas</h4>
+                    <p class="card-text"><span class="precio">16,99€</span>Ofrece a tu perro hasta 8 meses de protección contra pulgas y garrapatas, reduciendo también el riesgo de infección de leishmaniosis canina
+                    </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
                 </div>
             </div>
 
         </div>
     </div>
+    <div class="container">
+        <div class="card-group mt-3">
 
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_gato/png-clipart-cat-food-friskies-pet-food-nestle-purina-petcare-company-chicken-gravy-food-pet.png" class="imagen_producto">
+                    <h4 class="card-title">Comida húmeda para gatos</h4>
+                    <p class="card-text"><span class="precio">5,99€</span>Friskies Adulto es una nutrición 100% completa y equilibrada, elaborada con ingredientes de calidad seleccionados para proporcionar a tu gato el alimento que le apasiona y necesita. </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
 
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_gato/Juguete-para-gatos-Ratoncito-con-Cuerda-Ojos-Saltones_800x.webp" class="imagen_producto">
+                    <h4 class="card-title">Juguete para gatos</h4>
+                    <p class="card-text"><span class="precio">7€</span>Juguete para gatos Ratoncito con Cuerda ojos saltones, Interactivo juguete que mantiene entretenido al gato. </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
 
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_gato/seresto_gato.png" class="imagen_producto">
+                    <h4 class="card-title">Collarín antipulgas</h4>
+                    <p class="card-text"><span class="precio">16,99€</span>Ofrece a tu gato hasta 8 meses de protección contra pulgas y garrapatas.</p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-group mt-3">
 
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_otros/Alimento-para-Canarios-1kg_1.png" class="imagen_producto">
+                    <h4 class="card-title">Alpiste para canario</h4>
+                    <p class="card-text"><span class="precio">4€</span>Alimento completo para canarios a base de cereales, semillas y frutos secos, que repercutirá directamente en una buena calidad de su plumaje, su salud y las ganas de cantar.</p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_otros/T514147_9651.png.png" class="imagen_producto">
+                    <h4 class="card-title">Comida para peces</h4>
+                    <p class="card-text"><span class="precio">3€</span>La dieta biológicamente equilibrada asegura que sus carpines dorados se mantengan sanos y activos</p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
+
+            <div class="card text-center border-info">
+                <div class="card-body">
+                    <img src="../img/productos_otros/3638_AzulVerde_Frente.png" class="imagen_producto">
+                    <h4 class="card-title">Jaula para hamster</h4>
+                    <p class="card-text"><span class="precio">19,99€</span>Para roedores pequeños forma parte de la nueva gama de diseño con look escandinavo de la marca Zolux. Es especialmente adecuado para ratones, hamsters, jerbos o incluso ratas. </p>
+                    <button class="boton_generico boton_comprar">Comprar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br><br>
 </body>
 <footer class="text-center text-white">
     <!-- Grid container -->

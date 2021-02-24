@@ -1,48 +1,21 @@
-/****************Políticas y privacidad**************/
+.ancla {
+	height: 50px;
+    position: fixed;
+    left: 1200;
+    bottom: 90;
+    fill: #008AB5 ;
+
+}
+.ancla:hover{
+ 	transition: fill 2s;
+    fill: #00B509;
+
+}
 
 footer {
-    text-align: center;
-    height: 3%;
-    background-color: rgba(255, 255, 255, 0.5);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    background-color: rgba(172, 255, 230 , 0.5);
 }
 
 footer a {
     font-weight: bold;
-    text-decoration: none;
-    color: rgba(9, 5, 255, 0.671);
-}
-
-svg {
-    height: 9%;
-    position: fixed;
-    left: 1100;
-    bottom: 90;
-}
-
-
-/************************+RESPONSIVE+**********************************************/
-
-@media screen and (max-width: 1200px) {
-    footer {
-        height: 3%;
-        font-size: 80%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    footer {
-        height: 3%;
-        font-size: 80%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    footer {
-        height: 3%;
-        font-size: 80%;
-    }
 }

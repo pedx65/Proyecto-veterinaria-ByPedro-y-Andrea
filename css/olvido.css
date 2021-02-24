@@ -1,47 +1,43 @@
-.contenedor_olvido{
-        display: flex;
-        flex-direction: column;
-         text-align: center;
-         margin-top: 5%;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    border-radius: 20px;
-}
-
-body {
-    background-image: url("../img/fondoindex.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #8EB8F1;
+.contenedor_olvido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  border-radius: 20px;
 }
 
 #boton_recordar_contrasena {
-    width: 20%;
-    height: 2em;
+  width: 20%;
+  height: 2em;
 }
 
-.contenedor_olvido input{
-    border: none;
-    box-shadow: 0 0 5px rgb(255, 255, 255);
-    border-radius: 2px;
+.contenedor_olvido input {
+  border: none;
+  -webkit-box-shadow: 0 0 5px white;
+          box-shadow: 0 0 5px white;
+  border-radius: 2px;
 }
-.boton_generico{
-width: 10%;
+
+.boton_generico {
+  width: 10%;
 }
-footer{
-    margin-top: 17%;
+
+footer {
+  margin-top: 17%;
 }
-.p_o{
-    margin-top: 2%;
-    font-weight: bold;
+
+.p_o {
+  margin-top: 2%;
+  font-weight: bold;
 }
-@media screen and (max-width:800px){
-    .boton_generico{
-        width: 15%;
-        }
-}
+/*# sourceMappingURL=olvido.css.map */

@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/generico/cabecera.css">
     <link rel="stylesheet" href="css/generico/menu.css">
     <link rel="stylesheet" href="css/generico/boton_generico.css">
-
+    <link rel="stylesheet" href="css/generico/body_generico.css">
     <link rel="stylesheet" href="css/generico/politicas.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!--Enlace a Java Script-->
     <script type="text/javascript" src="js/index.js"></script>
@@ -45,7 +46,7 @@
         </div>
 
         <div id="registro">
-            <a href="registro.html">Registro</a>
+            <a href="html/registro.html">Registro</a>
             <a href="olvido_contraseña.html" class="contraseña">¿Olvidó la contraseña?</a>
         </div>
         <nav id='menu'>
@@ -59,20 +60,14 @@
                         <li><a href='html/adoptala.html'>Adoptala</a></li>
                     </ul>
                 </li>
-                <li><a class='dropdown-arrow'>Productos</a>
-                    <ul class='sub-menus'>
-                        <li><a href='html/productos_perro.html'>Perros</a></li>
-                        <li><a href='html/productos_gato.html'>Gatos</a></li>
-                        <li><a href='html/productos_otros.html'>Otros</a></li>
-                    </ul>
-                </li>
+                <li><a href="html/productos.html">Productos</a></li>
                 <li><a class='dropdown-arrow'>Contactenos</a>
                     <ul class='sub-menus'>
                         <li><a href='html/redes.html'>Redes Sociales</a></li>
                         <li><a href='html/citas.html'>Citas</a></li>
                     </ul>
                 </li>
-                <li><a href='noticias.html'>Noticias</a></li>
+                <li><a href='html/noticias.html'>Noticias</a></li>
                 <li><a href='Ejercicios ejemplo Fernando/ejemplos.html'>Ejemplos fernando</a></li>
             </ul>
         </nav>
@@ -82,15 +77,14 @@
     <div>
         <h1 id="nombre">#PetsAndLive</h1>
         <div class="reproductor" id="reproductor">
-            <audio id="player">
-                <source src="sonidos/ballena.mp3" type="audio/mp3"  />
+            <audio id="player" loop>
+                <source src="sonidos/ballena.mp3" type="audio/mp3" />
                 <source src="Aretha.ogg" type="audio/ogg" />
             </audio>
-            <img src="https://yt3.ggpht.com/ytc/AAUvwnjY_qjGDVrTRBgJ_p1ziu7UGv-UGgEZP1Y877z-ew=s900-c-k-c0x00ffffff-no-rj" onclick="document.getElementById('player').play() "></img>
-            <img src="https://cdn0.iconfinder.com/data/icons/music-sets/500/218-512.png" onclick="document.getElementById('player').pause() "></img>
-            <img src="data:image/png;base64,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"
-                onclick="document.getElementById('player').volume-=0.1"> </img>
-            <img src="https://previews.123rf.com/images/dxinerz/dxinerz1509/dxinerz150901235/45592970-volumen-sonido-imagen-del-vector-del-icono-de-audio-tambi%C3%A9n-se-puede-utilizar-para-aplicaciones-multim.jpg" onclick="document.getElementById('player').volume+=0.1"></img>
+            <img src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/play_alt-512.png" alt="Reproducir" onclick="document.getElementById('player').play() "></img>
+            <img src="https://cdn0.iconfinder.com/data/icons/music-sets/500/218-512.png" alt="Pausar" onclick="document.getElementById('player').pause() "></img>
+            <img src="https://images.vexels.com/media/users/3/153418/isolated/preview/337316dccf75953264956076c9149bd8-volume-down-stroke-icon-by-vexels.png" alt="Bajar volumen" onclick="document.getElementById('player').volume-=0.1"> </img>
+            <img src="https://images.vexels.com/media/users/3/153420/isolated/preview/90566e96e6d42e232515850a0755f61b-volume-up-flat-icon-by-vexels.png" alt="Subir volumen" onclick="document.getElementById('player').volume+=0.1"></img>
         </div>
     </div>
     <!--slider con imagenes, intervalo de tiempo etc-->
@@ -104,25 +98,25 @@
         <!-- diapositivas -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="img/portada1.jpg" alt="">
+                <img class="d-block w-100" src="img/portada1.jpg" alt="Cachorritos en blanco y negros">
                 <div class="carousel-caption">
                     <h4>Conozca nuestro sitio y a nuestros profesionales</h4>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="informacion.html"><img class="d-block w-100" src="img/portada2.jpg" alt=""><a />
+                <a href="informacion.html"><img class="d-block w-100 lobo" src="img/portada2.jpg" alt="Zorro de las nieves"><a />
                     <div class="carousel-caption">
                         <h4 style="color: black;">Obtenga información sobre como cuidar su mascota</h4>
                     </div>
             </div>
             <div class="carousel-item">
-                <a href="adoptala.html"><img class="d-block w-100" src="img/portada3.jpg" alt=""></a>
+                <a href="adoptala.html"><img class="d-block w-100 gato_hierba" src="img/portada3.jpg" alt="Gatito en la hierba"></a>
                 <div class="carousel-caption">
                     <h4>Adopte animales!Necesitan un hogar</h4>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="producto_perro.html"><img class="d-block w-100" src="img/portada4.jpg" alt=""></a>
+                <a href="producto_perro.html"><img class="d-block w-100 perro_peligro" src="img/portada4.jpg" alt="Cachorrito y veterinario"></a>
                 <div class="carousel-caption">
                     <h4 style="color: black;">Compre productos y pida cita!</h4>
                 </div>
@@ -142,6 +136,7 @@
     </div>
 
     <div id="cuerpo">
+        <img src="img/indice.png" alt="Logotipo Veterinaria" class="indice_png">
         <div id="saber">
             <p id="mostrar" style="display: block;">Somos una empresa especializada en la ayuda a animales domésticos, nuestra principal...</p>
             <div class="overflow">
@@ -183,24 +178,67 @@
     </div>
 
     <a href="#ancla1">
-        <svg height="210" width="400" stroke="#19F010" fill="#236B8F">
-        
-        <path d="M150 0 L75 200 L225 200 Z" />
-        
-        Sorry, your browser does not support inline SVG.
-    </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"  class="bi bi-arrow-up-circle-fill ancla" viewBox="0 0 16 16" >
+  <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+</svg>
     </a>
     <video src="video/wake-up-wallpaper.mp4" autoplay loop muted poster="img/fondoindex.webp"></video>
-    <br><br><br><br>
+
+    <br><br>
 </body>
-<footer>
+
+<footer class="text-center text-white">
+    <!-- Grid container -->
+    <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg></a>
+
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+              </svg></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a>
+
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg></a>
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
     <a href="https://www.privacypolicies.com/live/5037ade4-26ea-45d2-9946-a727a3247e08" target="_blank">Politicas de
         privacidad</a>|
     <a href="https://www.privacypolicies.com/live/a9f73bb6-325d-45fc-ac81-492d4132dd0c" target="_blank">Politicas de
         cookies</a> |
     <a href="https://www.privacypolicies.com/live/28986f30-2bc6-4288-b5b4-e7e9cea7e314" target="_blank">Condiciones de
         uso</a>
-
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="#">#PetsAndLive.com</a>
+    </div>
+    <!-- Copyright -->
 </footer>
 
 
